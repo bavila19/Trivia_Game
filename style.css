@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(241, 198, 241);
+}
+
+#border {
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-style: groove;
+    border-color: palegreen;
+    border-radius: 5%;
+    margin: 40px 350px 25px 350px;
+    background-color:paleturquoise;
+}
