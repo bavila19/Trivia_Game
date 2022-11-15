@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./apps.js"></script>
+    <script src="./apps.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Coding Trivia</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,5 +22,37 @@
     <!-- <div class="resetbtn">
         <input type="reset" value="reset the game">
     </div>  -->
+    <main>
+        <div class="questions">
+            <div class="box"> 
+                <h1>What does DOM Stand for?</h1>
+                <button class="real answer"> Document object Model</button>
+                <button class="Fake answer"> document Object Model</button>
+            </div>
+            <div class="boxtwo">
+                <h3>Using Javascript what can be changed, added, or removed?</h3>
+                <button class="real">
+                    <ol>
+                        <li>Using Javascript what can be changed, added, or removed</li>
+                        <li>change the content of elements </li>
+                        <li>change the style properties of elements</li>
+                    </ol>
+                </button>
+                <button class="fake">
+                    <ol>
+                        <li>Add/remove documents to/from the element </li>
+                        <li>Change the content of properties</li>
+                        <li>Change the Style properties of documents</li>
+                    </ol>
+                </button>
+            </div>
+            <div class="box overlay">
+                <h3>Game Infor:</h3>
+                <button class="startbtn">
+                    start
+                </button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
