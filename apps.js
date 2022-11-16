@@ -41,12 +41,23 @@ incorrect_answer5.addEventListener("click",(event) =>{
     incorrect_answer5.style.backgroundColor="red"
     box_two.style.display="block"
 });
-
+const box_four = document.querySelector('.box-four')
+const correct_option4 = document.querySelector('.option-ten')
+correct_option4.addEventListener("click", (event) =>{
+    event.preventDefault()
+    box_four.style.display="none"
+});
 //start
+let score = 0
 const startb = document.querySelector('.startbtn')
 const box_overlay = document.querySelector('.overlay')
 startb.addEventListener("click",(event) =>{
     event.preventDefault()
-    box_overlay.style.display="none"})
+    box_overlay.style.display="none"
+    if (startb === true){
+        startb +=5
+    }
+    
+});
 
 
