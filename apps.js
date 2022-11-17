@@ -4,7 +4,7 @@ let disNum = 0
 
 function plusScore() {
     displayNum.innerText = disNum +=5
-    if (disNum === 20){
+    if (disNum === 15){
         alert("You won!");
         window.location.reload();
     }
@@ -12,7 +12,8 @@ function plusScore() {
 function minusScore(){
     displayNum.innerText= disNum -=5
     if (disNum ===5){
-        alert("Wrong Answer")
+        alert("You Lost :(")
+        window.location.reload();
     }
 }
 
