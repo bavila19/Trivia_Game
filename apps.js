@@ -4,16 +4,18 @@ let disNum = 0
 
 function plusScore() {
     displayNum.innerText = disNum +=5
-    if (disNum === 15){
+    if (disNum >= 20){
         alert("You won!");
         window.location.reload();
     }
 }
 function minusScore(){
     displayNum.innerText= disNum -=5
-    if (disNum ===5){
+    if (disNum <=10){
         alert("You Lost :(")
         window.location.reload();
+    // }else(disNum =-10);{
+    //     alert("you lost")
     }
 }
 
@@ -22,8 +24,10 @@ const box_one= document.querySelector('.box')
 correct_option1.addEventListener("click",(event) =>{
     event.preventDefault()
     correct_option1.style.backgroundColor="green"
-    box_one.style.display="block"
+    box_one.style.display="none"
     plusScore()
+    window.location.reload();
+
 });
 
 const incorrect_answer2 = document.querySelector('.option-two')
