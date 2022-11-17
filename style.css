@@ -26,7 +26,7 @@ body{
 
 .box{
     width: 100%;
-    height: 100%;
+    height: 130%;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,9 +36,9 @@ body{
     text-align: center;
 }
 
-.boxtwo {
+.box-two {
     width: 100%;
-    height: 100%;
+    height: 130%;
     position: absolute;
     top: 0;
     left: 0;
@@ -49,7 +49,7 @@ body{
 }
 .box-three {
     width: 100%;
-    height: 100%;
+    height: 130%;
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@ body{
 
 .box-four {
     width: 100%;
-    height: 100%;
+    height: 130%;
     position: absolute;
     top: 0;
     left: 0;
@@ -72,11 +72,11 @@ body{
 }
 
 .overlay {
-    z-index: 9;
+    z-index: 1;
     position: absolute;
     background: rgb(245, 221, 195);
 }
-.option-one, .option-two, .option-three, .option-four, .option-five, .option-six, .option-seven, .option-eight, .option-nine, .option-ten{
+.option-one, .option-two, .option-three, .option-four, .option-five, .option-six, .option-seven, .option-eight, .option-nine, .option-ten, .option-eleven{
     text-align:start;
     margin: 10px 25px 5px 25px;
     padding: 5px;
@@ -84,6 +84,11 @@ body{
     border-radius: 12px;
 }
 
+.score{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
 
 
 /* .startbtn
