@@ -1,23 +1,5 @@
 const cardContainer= document.querySelectorAll('.card-container')
-const displayNum= document.getElementById("incCount")
-let disNum = 0
 
-function plusScore() {
-    displayNum.innerText = disNum +=5
-    if (disNum >= 20){
-        alert("You won!");
-        window.location.reload();
-    }
-}
-function minusScore(){
-    displayNum.innerText= disNum -=5
-    if (disNum <=10){
-        alert("You Lost :(")
-        window.location.reload();
-    // }else(disNum =-10);{
-    //     alert("you lost")
-    }
-}
 
 const correct_option1  = document.querySelector ('.option-one')
 const box_one= document.querySelector('.box')
@@ -26,15 +8,14 @@ correct_option1.addEventListener("click",(event) =>{
     correct_option1.style.backgroundColor="green"
     box_one.style.display="none"
     plusScore()
-    window.location.reload();
-
+    
 });
 
 const incorrect_answer2 = document.querySelector('.option-two')
 incorrect_answer2.addEventListener("click",(event) =>{
     event.preventDefault()
     incorrect_answer2.style.backgroundColor="red"
-    box_one.style.display="block"
+    box_one.style.display="none"
     minusScore()
 });
 
@@ -42,10 +23,9 @@ const incorrect_answer3= document.querySelector('.option-three')
 incorrect_answer3.addEventListener("click",(event) =>{
     event.preventDefault()
     incorrect_answer3.style.backgroundColor="red"
-    box_one.style.display="block"
+    box_one.style.display="none"
     minusScore()
 });
-// Card two
 const box_two = document.querySelector('.box-two')
 const correct_options = document.querySelector('.option-four')
 correct_options.addEventListener("click", (event) =>{
@@ -83,7 +63,7 @@ correct_option4.addEventListener("click", (event) =>{
     event.preventDefault()
     box_three.style.display="none"
     plusScore()
-
+    
 });
 
 const incorrect_answer7= document.querySelector('.option-nine')
@@ -100,7 +80,7 @@ correct_option5.addEventListener("click", (event) =>{
     event.preventDefault()
     box_four.style.display="none"
     plusScore()
-
+    
 });
 
 const incorrect_answer8= document.querySelector('.option-eleven')
@@ -119,3 +99,33 @@ startb.addEventListener("click",(event) =>{
     box_overlay.style.display="none"
     
 });
+
+const displayNum= document.getElementById("incCount")
+let disNum = 0
+const youLose = document.createElement('h2')
+const youWin = document.createElement('h2')
+
+
+function plusScore() {
+    displayNum.innerText = disNum +=5
+    if (disNum >= 20){
+        youWin.innerHTML="You Win"
+        document.querySelector('.message').appendChild(youWin)
+    }
+}
+
+
+function minusScore(){
+    displayNum.innerText= disNum -=5;
+    if (disNum <=10){
+        youLose.innerHTML="you lost:(" 
+        document.querySelector('.message').appendChild(youLose)
+    }
+}
+
+const restartButton = document.querySelector('.restart')
+restartButton.addEventListener("click",()=>{
+    restartButton.forEach(box => {
+        box.classList.remove()
+    });
+})
