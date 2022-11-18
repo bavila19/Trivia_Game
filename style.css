@@ -1,17 +1,20 @@
 body{
     background-color: rgb(241, 198, 241);
 }
-
-#border {
-    font-family: 'Roboto Slab', serif;
+.title{
     display: flex;
     justify-content: center;
+}
+#border {
+    font-family: 'Roboto Slab', serif;
+    width: 300px;
     text-align: center;
     border-style: groove;
     border-color: palegreen;
     border-radius: 5%;
     margin: 40px 350px 25px 350px;
     background-color:paleturquoise;
+    
 }
 .card-container{
     display: flex;
@@ -76,20 +79,42 @@ body{
     position: absolute;
     background: rgb(245, 221, 195);
 }
+.startbtn{
+    background-color: rgb(222, 222, 255);
+    border-color:rgb(222, 222, 255) ;
+}
 .option-one, .option-two, .option-three, .option-four, .option-five, .option-six, .option-seven, .option-eight, .option-nine, .option-ten, .option-eleven{
     text-align:start;
     margin: 10px 25px 5px 25px;
     padding: 5px;
     background-color:rgb(186, 246, 246);
+    border-color: rgb(186, 246, 246);
     border-radius: 12px;
 }
 
 .score{
     display: flex;
     flex-direction:column;
-    justify-content:space-around;
+    margin: 100px 1200px 200px 1200px; 
+    width: 80px;
+    text-align: center;
+    padding: 0px 5px 15px 10px;
+    background-color: rgb(209, 251, 230);
+    border-style:groove;
+    border-radius: 5%;
+    border-color: rgb(90, 225, 90);
+
 }
 
+#incCount{
+    text-decoration: underline ;
+}
+ .restart{
+    width: 60px;
+    align-self: center;
+    background-color: rgb(213, 223, 253);
+    border-color: rgb(213, 223, 253);
+ }
 
 /* .startbtn
 .resetbtn{
