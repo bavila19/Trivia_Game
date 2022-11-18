@@ -109,7 +109,7 @@ const youWin = document.createElement('h2')
 function plusScore() {
     displayNum.innerText = disNum +=5
     if (disNum >= 20){
-        youWin.innerHTML="You Win"
+        youWin.innerHTML="You Win :) plz restart"
         document.querySelector('.message').appendChild(youWin)
     }
 }
@@ -118,14 +118,20 @@ function plusScore() {
 function minusScore(){
     displayNum.innerText= disNum -=5;
     if (disNum <=10){
-        youLose.innerHTML="you lost:(" 
+        youLose.innerHTML="you lost:( plz restart" 
         document.querySelector('.message').appendChild(youLose)
     }
 }
 
-const restartButton = document.querySelector('.restart')
-restartButton.addEventListener("click",()=>{
-    restartButton.forEach(box => {
-        box.classList.remove()
-    });
-})
+// Only variable that would need to be set back to 0 is the disNum
+
+
+
+
+
+//
+// restartButton.addEventListener("click",()=>{
+//     restartButton.forEach(box => {
+//         box.classList.remove()
+//     });
+// })
