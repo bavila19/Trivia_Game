@@ -122,16 +122,3 @@ function minusScore(){
         document.querySelector('.message').appendChild(youLose)
     }
 }
-
-// Only variable that would need to be set back to 0 is the disNum
-
-
-
-
-
-//
-// restartButton.addEventListener("click",()=>{
-//     restartButton.forEach(box => {
-//         box.classList.remove()
-//     });
-// })
