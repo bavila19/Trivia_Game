@@ -1,6 +1,3 @@
-const cardContainer= document.querySelectorAll('.card-container')
-
-
 const correct_option1  = document.querySelector ('.option-one')
 const box_one= document.querySelector('.box')
 correct_option1.addEventListener("click",(event) =>{
