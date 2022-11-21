@@ -6,4 +6,4 @@ To make this game work, I used JavaScript, HTML, & CSS. Event listeners do play 
 This game will act as a mnemonic device for me and as I continue to learn, more cards on will be added. As more cards get added I plan to change the way the game looks and add more features. Background, fonts, and colors may change over time as well. As of right now the the colors I have chosen are colors I find easy to look at.
 Game link: https://bavila19.github.io/Trivia_Game/
 
-![Wrong Question](https://imgur.com/CGYOIVR)
+![choices](https://imgur.com/CGYOIVR.png)
